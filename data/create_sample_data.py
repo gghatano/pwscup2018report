@@ -179,9 +179,10 @@ def create_sample_data(dat_anon):
 1ファイル6MB程度なので、全チームで $ 80 \text{MB} \times N$ のデータができます。N=100だと8GBになります。
 """
 
-teamname_list = ["01", "02", "03", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14"]
+## teamname_list = ["01", "02", "03", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14"]
+teamname_list = ["01"]
 
-N = 1
+N = 10
 for i in range(0,N):
   for teamname in teamname_list: 
     filename = "A1_" + teamname + ".csv"
@@ -198,5 +199,5 @@ for i in range(0,N):
     
     outputfilename = "A1_" + teamname + "_" + str(i) + ".csv"
     with open(outputfilename, "w") as f:
-      dat_res.to_csv(f)
+      dat_res.to_csv(f, index = False)
 
