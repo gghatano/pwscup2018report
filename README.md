@@ -12,7 +12,11 @@ PWSCup2018の報告論文作業
 └── utility: 有用性評価スクリプト
 ```
 
-## 予定
+## 進捗
+- 残タスク
+-- https://github.com/gghatano/pwscup2018report/projects/1
+
+## 利用手順(予定)
 
 1. pyhon3.6を用意する
 
